@@ -9,10 +9,7 @@
   <style>
   .branding {
     background: #323232;
-    padding-top: 10px;
-  }
-  .ui.search{
-    margin-top: 30px;
+    padding-top: 8px;
   }
   .ui.menu.mmenu a {
     color: #FFF !important;
@@ -21,10 +18,16 @@
     border-color: #FFF !important;
   }
   .mmText {
-    font-size: 1.3rem !important
+    font-size: 1.3rem !important;
+  }
+  .mmText p {
+    line-height: 1.85rem;
   }
   .footer.segment {
     padding: 5em 0em;
+  }
+  .item.logo {
+
   }
   </style>
 
@@ -156,13 +159,9 @@
 
     <div class="ui fluid branding container">
       <div class="ui container">
-        <div class="ui two coulmn stackable grid">
-          <div class="six wide column"><img class="logo" src="assets/images/logo.png"></div>
-          <div class="ten wide right aligned column">...</div>
-        </div>
-
-        <div class="ui huge secondary mmenu pointing menu">
-          <a class="item menuitm" href="#" id="newsMenu"><i class="align justify icon"></i></a>
+        <div class="ui huge secondary mmenu menu">
+          <a class="item menuitm" href="#" id="newsMenu"><i class="align justify large icon"></i></a>
+          <a href="#" class="item logo"><img class="ui image" class="logo" src="assets/images/logo.png"></a>
           <a class="active item" href="#" id="newsMenu">News</a>
           <a class="item" href="#" id="videosMenu">Videos</a>
           <a class="item" href="#" id="malayalamMenu">Malayalam</a>
@@ -268,58 +267,58 @@
 
               </div>
 
-              <div class="ui hidden divider"></div>
-              <div class="ui hidden divider"></div>
-              <div class="ui horizontal divider">Featured Videos</div>
-              <div class="ui hidden divider"></div>
+            </div>
+          </div>
 
-              <div class="ui two column grid">
-                <div class="column">
-                  <div class="ui fluid card">
-                    <a class="image" href="#">
-                      <img src="assets/images/tile.jpg">
-                    </a>
-                    <div class="content">
-                      <a class="description">Daniel Louise</a>
-                    </div>
-                  </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <div class="ui horizontal divider">Featured Videos</div>
+          <div class="ui hidden divider"></div>
+
+          <div class="ui relaxed items">
+            <div class="item">
+              <div class="ui small image">
+                <img src="assets/images/tile.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Arrowhead Valley Camp</div>
+                <div class="meta">
+                  <span class="price">Thu, 2017-01-12 18:42</span>
                 </div>
-
-                <div class="column">
-                  <div class="ui fluid card">
-                    <a class="image" href="#">
-                      <img src="assets/images/tile.jpg">
-                    </a>
-                    <div class="content">
-                      <a class="description">Daniel Louise</a>
-                    </div>
-                  </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
                 </div>
-
-                <div class="column">
-                  <div class="ui fluid card">
-                    <a class="image" href="#">
-                      <img src="assets/images/tile.jpg">
-                    </a>
-                    <div class="content">
-                      <a class="description">Daniel Louise</a>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui small image">
+                <img src="assets/images/tile.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Aistinctio ullam est </div>
+                <div class="meta">
+                  <span class="price">Thu, 2017-01-12 18:42</span>
                 </div>
-
-                <div class="column">
-                  <div class="ui fluid card">
-                    <a class="image" href="#">
-                      <img src="assets/images/tile.jpg">
-                    </a>
-                    <div class="content">
-                      <a class="description">Daniel Louise</a>
-                    </div>
-                  </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
+                </div>
+              </div>
+            </div><div class="item">
+              <div class="ui small image">
+                <img src="assets/images/tile.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Suscipit nisi accusamus</div>
+                <div class="meta">
+                  <span class="price">Thu, 2017-01-12 18:42</span>
+                </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
         <div class="four wide column">
 
@@ -331,7 +330,7 @@
             <h3 class="ui horizontal divider">Latest Videos</h3>
             <div class="ui relaxed fluid items">
               <div class="item">
-                <div class="ui tiny image">
+                <div class="ui small image">
                   <img src="assets/images/tile.jpg">
                 </div>
                 <div class="content">
@@ -346,7 +345,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="ui tiny image">
+                <div class="ui small image">
                   <img src="assets/images/tile.jpg">
                 </div>
                 <div class="content">
@@ -361,7 +360,7 @@
               </div>
 
               <div class="item">
-                <div class="ui tiny image">
+                <div class="ui small image">
                   <img src="assets/images/tile.jpg">
                 </div>
                 <div class="content">
@@ -376,7 +375,7 @@
               </div>
 
               <div class="item">
-                <div class="ui tiny image">
+                <div class="ui small image">
                   <img src="assets/images/tile.jpg">
                 </div>
                 <div class="content">
