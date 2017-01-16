@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News | Metromatinee</title>
-  <link rel="stylesheet" href="dist/semantic.min.css">
+  <link rel="stylesheet" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" href="assets/mtheme.css">
 
 
@@ -138,8 +138,8 @@
     <div class="ui fluid branding container">
       <div class="ui container">
         <div class="ui huge secondary inverted mmenu menu">
-          <a class="item nohover menuitm" href="#" id="newsMenu"><i class="align justify large icon"></i></a>
-          <a href="#" class="item nohover logo"><img class="ui image" class="logo" src="assets/images/logo.png"></a>
+          <a href="#" class="item nohover logo"><img class="ui image" class="logo" src="assets/images/metromatinee-logo.svg" width="250"></a>
+          <a class="item nohover menuitm" href="#" id="newsMenu"><img class="ui image" src="assets/images/menu.svg" width="32"></a>
           <a class="active item" href="news.html" id="newsMenu">News</a>
           <a class="item" href="#" id="videosMenu">Videos</a>
           <a class="item" href="#" id="malayalamMenu">Malayalam</a>
@@ -407,37 +407,10 @@
 
 </body>
 <script src="assets/library/jquery.min.js"></script>
-<script src="dist/semantic.min.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
 <script>
 $(document)
 .ready(function() {
-
-  var content = [
-    { title: 'Premam' },
-    { title: 'United Arab Emirates' },
-    { title: 'Afghanistan' },
-    { title: 'Antigua' },
-    { title: 'Anguilla' },
-    { title: 'Albania' },
-    { title: 'Armenia' },
-    { title: 'Netherlands Antilles' },
-    { title: 'Angola' },
-    { title: 'Argentina' },
-    { title: 'American Samoa' },
-    { title: 'Austria' },
-    { title: 'Australia' },
-    { title: 'Aruba' },
-    { title: 'Aland Islands' },
-    { title: 'Azerbaijan' },
-    { title: 'Bosnia' },
-    { title: 'Barbados' },
-    { title: 'Bangladesh' },
-    { title: 'Belgium' },
-    { title: 'Burkina Faso' },
-    { title: 'Bulgaria' },
-    { title: 'Bahrain' },
-    { title: 'Burundi' }
-  ];
 
   $('.menuitm').on('click', function(e) {
     e.preventDefault();
