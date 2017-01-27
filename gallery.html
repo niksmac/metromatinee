@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gallery | Metromatinee</title>
   <link rel="stylesheet" href="semantic/dist/semantic.min.css">
@@ -162,7 +162,7 @@
       <div class="ui grid">
         <div class="column">
           <h1 class="ui header">
-            News
+            Gallery
             <div class="sub header">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
           </h1>
 
@@ -171,27 +171,35 @@
 
       <div class="ui stackable grid">
 
-        <div class="twelve wide column">
-          <div class="ui leaderboard test ad" data-text="Leaderboard"></div>
-          <div class="ui divider hidden"></div>
-
+        <div class="sixteen wide column">
           <div class="ui stackable grid">
 
-            <div class="three wide column">
+            <div class="two wide column">
               <div class="ui skyscraper test ad" data-text="Skyscraper 1"></div>
             </div>
-            <div class="ten wide column">
+            <div class="nine wide column">
               <img src="http://metromatinee.com/sites/default/files/03_vishnuvardhan.jpg" class="ui fluid image">
+
             </div>
-            <div class="three wide column">
-              <div class="ui skyscraper test ad" data-text="Skyscraper 2"></div>
+            <div class="five wide column">
+              <div class="ui half page test ad" data-text="Half 2"></div>
+            </div>
+
+            <div class="ui small images">
+              <img src="/images/wireframe/image.png">
+              <img src="/images/wireframe/image.png">
+              <img src="/images/wireframe/image.png">
+              <img src="/images/wireframe/image.png">
+              <img src="/images/wireframe/image.png">
+              <img src="/images/wireframe/image.png">
+              <img src="/images/wireframe/image.png">
             </div>
 
 
           </div>
 
           <div class="ui divider hidden"></div>
-          <div class="sectiondivider">Related Photos</div>
+          <div class="sectiondivider">Related Albums</div>
           <div class="ui small images">
             <img src="/images/wireframe/image.png">
             <img src="/images/wireframe/image.png">
@@ -280,93 +288,12 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-
           </div>
-
         </div>
-        <div class="four wide column">
-
-
-          <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
-
-          <div class="ui sticky">
-            <div class="ui hidden divider"></div>
-            <h3 class="ui horizontal divider">Latest Videos</h3>
-            <div class="ui relaxed fluid items">
-              <div class="item">
-                <div class="ui small image">
-                  <img src="assets/images/tile.jpg">
-                </div>
-                <div class="content">
-                  <a class="header">Header</a>
-                  <div class="meta">
-                    <span>Description</span>
-                  </div>
-                  <div class="description">
-                    <p></p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="item">
-                <div class="ui small image">
-                  <img src="assets/images/tile.jpg">
-                </div>
-                <div class="content">
-                  <a class="header">Header</a>
-                  <div class="meta">
-                    <span>Description</span>
-                  </div>
-                  <div class="description">
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="ui small image">
-                  <img src="assets/images/tile.jpg">
-                </div>
-                <div class="content">
-                  <a class="header">Header</a>
-                  <div class="meta">
-                    <span>Description</span>
-                  </div>
-                  <div class="description">
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="ui small image">
-                  <img src="assets/images/tile.jpg">
-                </div>
-                <div class="content">
-                  <a class="header">Header</a>
-                  <div class="meta">
-                    <span>Description</span>
-                  </div>
-                  <div class="description">
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div>
-
-          </div>
-
-
-        </div>
-
       </div>
 
-      <div class="ui hidden divider"></div>
       <div class="ui hidden divider"></div>
 
 
@@ -419,9 +346,6 @@ $(document)
     $('.ui.sidebar.' + thisId).sidebar('toggle');
 
   });
-
-  $('.ui.search').search({ source: content});
-
   $('.ui.embed').embed();
   $('.ui.sticky').sticky();
 
