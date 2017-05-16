@@ -6,7 +6,7 @@
        Element
 --------------------*/
 
-@margin: 0.5rem 0rem;
+@margin: 1rem 0rem;
 
 @highlightWidth: 1px;
 @highlightColor: @whiteBorderColor;

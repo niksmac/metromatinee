@@ -5,9 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News | Metromatinee</title>
-  <link rel="stylesheet" href="semantic/dist/semantic.min.css">
-  <link rel="stylesheet" href="assets/mtheme.css">
+  <link rel="stylesheet" href="dist/semantic.min.css">
+  <style>
+  .branding {
+    background: #323232;
+    padding-top: 8px;
+  }
+  .ui.menu.mmenu a {
+    color: #FFF !important;
+  }
+  .ui.menu.mmenu a.active {
+    border-color: #FFF !important;
+  }
+  .mmText {
+    font-size: 1.3rem !important;
+  }
+  .mmText p {
+    line-height: 1.85rem;
+  }
+  .footer.segment {
+    padding: 5em 0em;
+  }
 
+  .mar-top10 {
+    margin-top: 20px !important
+  }
+  .imgoverlay {
+    position: relative;;
+  }
+  .divoverlay {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    color: #FFF;
+    padding: 5px;
+    background: #555;
+  }
+  h2.featured {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .6);
+    margin-top: 0
+  }
+  </style>
 
 </head>
 <body>
@@ -137,14 +177,14 @@
 
     <div class="ui fluid branding container">
       <div class="ui container">
-        <div class="ui huge secondary inverted mmenu menu">
-          <a href="#" class="item nohover logo"><img class="ui image" class="logo" src="assets/images/metromatinee-logo.svg" width="250"></a>
-          <a class="item nohover menuitm" href="#" id="newsMenu"><img class="ui image" src="assets/images/menu.svg" width="32"></a>
+        <div class="ui huge secondary mmenu menu">
+          <a class="item menuitm" href="#" id="newsMenu"><i class="align justify large icon"></i></a>
+          <a href="#" class="item logo"><img class="ui image" class="logo" src="assets/images/logo.png"></a>
           <a class="active item" href="news.html" id="newsMenu">News</a>
-          <a class="item" href="videos.html" id="videosMenu">Videos</a>
+          <a class="item" href="#" id="videosMenu">Videos</a>
           <a class="item" href="#" id="malayalamMenu">Malayalam</a>
           <a class="item" href="#" id="talksMenu">Talks</a>
-          <a class="item" href="gallery.html">Gallery</a>
+
           <div class="right menu">
             <a class="item" href="#" id="videosMenu">Sign In</a>
           </div>
@@ -168,10 +208,18 @@
         </div>
       </div>
 
+
+      <div class="ui stackable four column grid">
+  <div class="column">we</div>
+  <div class="column">23</div>
+  <div class="column">34</div>
+  <div class="column">34</div>
+</div>
+
       <div class="ui stackable grid">
 
         <div class="twelve wide column">
-          <div class="ui equal width stackable grid">
+          <div class="ui equal width grid">
             <div class="column">
             <div class="ui imgoverlay">
               <a href="news-detail.html">
@@ -396,9 +444,9 @@
           <h4 class="ui inverted header">Footer Header</h4>
           <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
         </div>
+
+        <small>Powered by, lr </small>
       </div>
-      <div class="ui divider hidden"></div>
-      <small class="mar-top10">Powered by <a href="https://lightrains.com">Lightrains Technolabs</a> </small>
     </div>
   </div>
 
@@ -407,10 +455,37 @@
 
 </body>
 <script src="assets/library/jquery.min.js"></script>
-<script src="semantic/dist/semantic.min.js"></script>
+<script src="dist/semantic.min.js"></script>
 <script>
 $(document)
 .ready(function() {
+
+  var content = [
+    { title: 'Premam' },
+    { title: 'United Arab Emirates' },
+    { title: 'Afghanistan' },
+    { title: 'Antigua' },
+    { title: 'Anguilla' },
+    { title: 'Albania' },
+    { title: 'Armenia' },
+    { title: 'Netherlands Antilles' },
+    { title: 'Angola' },
+    { title: 'Argentina' },
+    { title: 'American Samoa' },
+    { title: 'Austria' },
+    { title: 'Australia' },
+    { title: 'Aruba' },
+    { title: 'Aland Islands' },
+    { title: 'Azerbaijan' },
+    { title: 'Bosnia' },
+    { title: 'Barbados' },
+    { title: 'Bangladesh' },
+    { title: 'Belgium' },
+    { title: 'Burkina Faso' },
+    { title: 'Bulgaria' },
+    { title: 'Bahrain' },
+    { title: 'Burundi' }
+  ];
 
   $('.menuitm').on('click', function(e) {
     e.preventDefault();
@@ -419,8 +494,10 @@ $(document)
 
   });
 
+  $('.ui.search').search({ source: content});
+
   $('.ui.embed').embed();
-  $('.ui.sticky').sticky();
+  // $('.ui.sticky').sticky();
 
 });
 </script>

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.7 - Divider
+ * # Semantic UI 2.2.10 - Divider
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -14,7 +14,7 @@
 *******************************/
 
 .ui.divider {
-  margin: 0.5rem 0rem;
+  margin: 1rem 0rem;
   line-height: 1;
   height: 0em;
   font-weight: bold;

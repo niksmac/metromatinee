@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ <link rel="stylesheet" href="semantic/dist/semantic.css">
+ <style>
+ .branding {
+   background: #323232;
+   padding-top: 8px;
+ }
+ .ui.menu.mmenu a {
+   color: #FFF !important;
+ }
+ .ui.menu.mmenu a.active {
+   border-color: #FFF !important;
+ }
+ .mmText {
+   font-size: 1.3rem !important;
+ }
+ .mmText p {
+   line-height: 1.85rem;
+ }
+ .footer.segment {
+   padding: 5em 0em;
+ }
+
+ .mar-top10 {
+   margin-top: 20px !important
+ }
+ .imgoverlay {
+   position: relative;;
+ }
+ .divoverlay {
+   position: absolute;
+   bottom: 0;
+   z-index: 2;
+   height: 80px;
+   width: 100%;
+   color: #FFF;
+   padding: 5px;
+   background: #555;
+ }
+ h2.featured {
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, .6);
+   margin-top: 0
+ }
+ </style>
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="pusher">
+
+    <div class="ui fluid branding container">
+      <div class="ui container">
+        <!-- <div class="ui huge secondary mmenu menu">
+          <a class="item menuitm" href="#" id="newsMenu"><i class="align justify large icon"></i></a>
+          <a href="#" class="item logo"><img class="ui image" class="logo" src="assets/images/logo.png"></a>
+          <a class="active item" href="news.html" id="newsMenu">News</a>
+          <a class="item" href="#" id="videosMenu">Videos</a>
+          <a class="item" href="#" id="malayalamMenu">Malayalam</a>
+          <a class="item" href="#" id="talksMenu">Talks</a>
+
+          <div class="right menu">
+            <a class="item" href="#" id="videosMenu">Sign In</a>
+          </div>
+
+        </div> -->
+      </div>
+    </div>
+
+    <div class="ui divider hidden"></div>
+
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="column">
+          <h1 class="ui header">
+            News
+            <div class="sub header">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </h1>
+
+        </div>
+      </div>
+
+      <div class="ui stackable grid">
+
+        <div class="twelve wide column">
+          <div class="ui equal width stackable grid">
+            <div class="column">
+            <div class="ui imgoverlay">
+              <a href="news-detail.html">
+                <img src="assets/images/square.jpg" alt="" class="ui fluid image">
+                <div class="divoverlay">
+                  <h2 class="ui header inverted featured">Anu Emmanuel To Star In Vikram's Dhruva Natchathiram</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="column">
+            <h3>Top News, this week.</h3>
+            <div class="ui relaxed list">
+              <div class="item">
+                <div class="content">
+                  <a class="ui header">Krolewskie Jadlo</a>
+                  <div class="description">An excellent polish restaurant, quick delivery and hearty, filling meals.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a class="ui header">Sapporo Haru</a>
+                  <div class="description">An excellent polish restaurant, quick delivery and hearty, excellent delivery and hearty meals.</div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content">
+                  <a class="ui header">Krolewskie Jadlo</a>
+                  <div class="description">An delivery and hearty excellent polish restaurant, quick delivery and delivery hearty, filling meals.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a class="ui header">Sapporo Haru</a>
+                  <div class="description">An excellent polish restaurant, quick delivery and hearty delivery and hearty, filling meals.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a class="ui header">Krolewskie Jadlo</a>
+                  <div class="description">An excellent polish restaurant, quick delivery and delivery and hearty hearty, excellent filling meals.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui divider hidden"></div>
+
+        <div class="ui leaderboard test ad" data-text="Leaderboard"></div>
+
+        <div class="ui relaxed divided items">
+          <div class="item">
+            <a class="ui medium image" href="news-detail.html">
+              <img src="assets/images/tile.jpg">
+            </a>
+            <div class="content">
+              <a class="ui huge header" href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit aborum laudantium?</a>
+              <div class="meta">
+                <span class="price">Thu, 2017-01-12 18:42</span>
+              </div>
+              <div class="description mar-top10">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est Ratione suscipit nisi accusamus, quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a class="ui medium image">
+              <img src="assets/images/tile.jpg">
+            </a>
+            <div class="content">
+              <a class="ui huge header" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit aborum laudantium?</a>
+              <div class="meta">
+                <span class="price">Thu, 2017-01-12 18:42</span>
+              </div>
+              <div class="description mar-top10">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est Ratione suscipit nisi accusamus, quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a class="ui medium image">
+              <img src="assets/images/tile.jpg">
+            </a>
+            <div class="content">
+              <a class="ui huge header" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit aborum laudantium?</a>
+              <div class="meta">
+                <span class="price">Thu, 2017-01-12 18:42</span>
+              </div>
+              <div class="description mar-top10">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est Ratione suscipit nisi accusamus, quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a class="ui medium image">
+              <img src="assets/images/tile.jpg">
+            </a>
+            <div class="content">
+              <a class="ui huge header" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit aborum laudantium?</a>
+              <div class="meta">
+                <span class="price">Thu, 2017-01-12 18:42</span>
+              </div>
+              <div class="description mar-top10">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium voluptatum provident labore dolor, quae, adipisci delectus, distinctio ullam est Ratione suscipit nisi accusamus, quibusdam veniam aliquid! Ratione suscipit nisi accusamus, optio quis, explicabo.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</body>
+</html>

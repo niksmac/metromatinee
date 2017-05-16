@@ -1,11 +1,3 @@
 /*******************************
         Global Overrides
 *******************************/
-
-@emSize   : 14px;
-
-
-@headerFont        : @fontName, sans-serif;
-@pageFont          : @fontName, sans-serif;
-
-@googleFontSizes   : '400,700,900,400italic,700italic';
